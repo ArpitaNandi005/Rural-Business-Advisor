@@ -1,0 +1,554 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7f2;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #f4f7f2;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 430px;
+  background: white;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.login-card h1 {
+  font-size: 38px;
+  margin-bottom: 8px;
+  color: #236b3c;
+}
+
+.login-subtitle {
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 35px;
+  letter-spacing: 1px;
+}
+
+.login-card h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.login-card > p {
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.login-card form {
+  text-align: left;
+}
+
+.login-card label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: 600;
+  color: #333;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 13px;
+  margin-bottom: 18px;
+  border: 1px solid #d5d5d5;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.login-card input:focus {
+  outline: none;
+  border-color: #236b3c;
+}
+
+.login-card button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #236b3c;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-card button:hover {
+  background: #18532d;
+}
+
+.register-text {
+  margin-top: 25px;
+  margin-bottom: 0 !important;
+}
+
+.register-text a {
+  color: #236b3c;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-card .welcome-title {
+  color: #4F46E5; /* Change this to your desired color */
+}
+/* =========================
+   DASHBOARD
+   ========================= */
+
+.dashboard-page {
+  min-height: 100vh;
+  background: #f4f7f2;
+}
+
+.dashboard-header {
+  background: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.dashboard-header h1 {
+  color: #236b3c;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.dashboard-header p {
+  color: #666;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.logout-button {
+  padding: 10px 20px;
+  border: 1px solid #236b3c;
+  background: white;
+  color: #236b3c;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.logout-button:hover {
+  background: #236b3c;
+  color: white;
+}
+
+.dashboard-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.dashboard-content h2 {
+  font-size: 30px;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.dashboard-welcome {
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.dashboard-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.dashboard-card h3 {
+  color: #236b3c;
+  font-size: 21px;
+  margin-bottom: 15px;
+}
+
+.dashboard-card p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.dashboard-card button {
+  padding: 11px 18px;
+  border: none;
+  border-radius: 7px;
+  background: #236b3c;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.dashboard-card button:hover {
+  background: #18532d;
+}
+
+/* Mobile screen */
+
+@media (max-width: 700px) {
+  .dashboard-header {
+    padding: 20px;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-content h2 {
+    font-size: 25px;
+  }
+}
+/* =========================
+   MARKET PRICES
+   ========================= */
+
+.market-page {
+  min-height: 100vh;
+  background: #f4f7f2;
+}
+
+.market-header {
+  background: white;
+  padding: 20px 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.market-header h1 {
+  color: #236b3c;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.market-header p {
+  color: #666;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.market-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.market-content h2 {
+  font-size: 30px;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.market-description {
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.market-table-container {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+  overflow-x: auto;
+}
+
+.market-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.market-table th,
+.market-table td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.market-table th {
+  color: #236b3c;
+  font-size: 15px;
+}
+
+.market-table td {
+  color: #555;
+}
+
+.market-table tr:last-child td {
+  border-bottom: none;
+}
+/* =========================
+   AI ADVISOR
+   ========================= */
+
+.ai-page {
+  min-height: 100vh;
+  background: #f4f7f2;
+}
+
+.ai-header {
+  background: white;
+  padding: 20px 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.ai-header h1 {
+  color: #236b3c;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.ai-header p {
+  color: #666;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.ai-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.ai-content h2 {
+  font-size: 30px;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.ai-description {
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.ai-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.ai-card label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.ai-card textarea {
+  width: 100%;
+  min-height: 150px;
+  padding: 15px;
+  border: 1px solid #d5d5d5;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+  resize: vertical;
+  margin-bottom: 20px;
+}
+
+.ai-card textarea:focus {
+  outline: none;
+  border-color: #236b3c;
+}
+
+.ai-card button {
+  padding: 13px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #236b3c;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.ai-card button:hover {
+  background: #18532d;
+}
+
+.ai-answer {
+  margin-top: 25px;
+  padding: 20px;
+  border-left: 5px solid #236b3c;
+  background: #f4f7f2;
+  border-radius: 8px;
+}
+
+.ai-answer h3 {
+  color: #236b3c;
+  margin-bottom: 10px;
+}
+
+.ai-answer p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  .ai-header {
+    padding: 20px;
+  }
+
+  .ai-content {
+    padding: 30px 15px;
+  }
+
+  .ai-content h2 {
+    font-size: 25px;
+  }
+
+  .ai-card {
+    padding: 20px;
+  }
+}
+/* =========================
+   LOAN RECOMMENDATION
+   ========================= */
+
+.loan-page {
+  min-height: 100vh;
+  background: #f4f7f2;
+}
+
+.loan-header {
+  background: white;
+  padding: 20px 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.loan-header h1 {
+  color: #236b3c;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.loan-header p {
+  color: #666;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.loan-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.loan-content h2 {
+  font-size: 30px;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.loan-description {
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.loan-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.loan-card {
+  background: white;
+  padding: 28px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.loan-card h3 {
+  color: #236b3c;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.loan-card p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.loan-card strong {
+  color: #333;
+}
+
+.loan-card button {
+  margin-top: 10px;
+  padding: 11px 18px;
+  border: none;
+  border-radius: 7px;
+  background: #236b3c;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.loan-card button:hover {
+  background: #18532d;
+}
+
+.loan-note {
+  margin-top: 30px;
+  padding: 18px;
+  background: white;
+  border-radius: 10px;
+  color: #666;
+  line-height: 1.6;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+}
+
+.loan-note strong {
+  color: #236b3c;
+}
+
+/* Mobile */
+
+@media (max-width: 800px) {
+  .loan-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .loan-header {
+    padding: 20px;
+  }
+
+  .loan-content {
+    padding: 30px 15px;
+  }
+
+  .loan-content h2 {
+    font-size: 25px;
+  }
+}
